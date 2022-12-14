@@ -1,12 +1,15 @@
 {
-    "name": "Wsp",
-    "descripcion": "Lleva ...",
+    "name": "Enviar Mensaje WhatsApp",
+    "description": "Envie mensajes a numeros de WhatsApp usando la APIS Web. ",
     "version": "1.0",
     "manifest_version": 3,
     "action": {
         "default_popup": "popup.html",
         "default_icon":{
-            "16":"img/get_strted16.png","32":"img/get_strted32.png","48":"img/get_strted48.png","128":"img/get_strted128.png"
+            "16":"img/logo16.png",
+            "32":"img/logo32.png",
+            "48":"img/logo48.png",
+            "128":"img/logo128.png"
         }
     }
 }
