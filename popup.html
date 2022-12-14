@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API-WhatsApp</title>
+</head>
+<body>
+    <input type="text" id="input" />
+    <button>Redirect</button>
+
+    <script>
+      const button = document.querySelector('button');
+      const input = document.querySelector('input');
+      const redirect = () => {
+        const value = input.value.trim();
+        const url = `https://api.whatsapp.com/send?phone=${value}`;
+        window.location.href = url;
+      }
+      button.addEventListener('click', redirect);
+    </script>
+</body>
+</html>
