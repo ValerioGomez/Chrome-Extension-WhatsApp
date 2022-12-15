@@ -5,20 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>API-WhatsApp</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <input type="text" id="input" />
-    <button>Redirect</button>
+<body class=" dark:bg-slate-800"> 
+    <div class="container px-4 pt-6 w-64">
+        <input type="text" id="input" class="border-2 border-blue-500 w-48" />
+        <br><br>
+        <button class="bottom-0 w-48 border-solid border-2 border-sky-500">Enviar</button>
+    </div>
 
     <script>
       const button = document.querySelector('button');
       const input = document.querySelector('input');
       const redirect = () => {
-        const value = input.value.trim();
+      const value = input.value.trim();
         const url = `https://api.whatsapp.com/send?phone=${value}`;
         window.location.href = url;
       }
       button.addEventListener('click', redirect);
+
+      input.addEventListener('keyup', (event) => {
+        if (event.keyCode === 13) {
+            redirect();
+        }
+        });
     </script>
 </body>
 </html>

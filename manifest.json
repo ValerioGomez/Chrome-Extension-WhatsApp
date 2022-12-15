@@ -1,7 +1,7 @@
 {
     "name": "Enviar Mensaje WhatsApp",
-    "description": "Envie mensajes a numeros de WhatsApp usando la APIS Web. ",
-    "version": "1.0",
+    "description": "Envie mensajes WhatsApp Web ingresando el numero. ",
+    "version": "1.0.0",
     "manifest_version": 3,
     "action": {
         "default_popup": "popup.html",
