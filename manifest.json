@@ -1,7 +1,7 @@
 {
     "name": "Enviar Mensaje WhatsApp",
-    "description": "Envie mensajes WhatsApp Web ingresando el numero. ",
-    "version": "1.0.1",
+    "description": "Envie mensajes WhatsApp Web ingresando el numero, sin importar los espacios o demas caracteres del portapapeles. ",
+    "version": "1.0",
     "manifest_version": 3,
     "permissions": [
         "tabs"
